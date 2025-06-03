@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tale Tiles</title>
+    <link rel="stylesheet" href="../assets/css/gameplay.css">
+</head>
+<body>
+    <div class="gameplay-page">
+        <div class="contents">
+            <div class="left-container">
+                <h2 id="exitButton">EXIT</h2>
+            </div>
+            <div class="center-container">
+                <div class="clue-grid">
+                </div>
+                <div class="answer-section">
+                    <div class="letter-boxes"></div>
+                    <div class="letter-bank"></div>
+                </div>
+            </div>
+            <div class="exit-modal modal" id="exitModal">
+                <div class="modal-contents exitModal">
+                    <div class="modal-text">
+                        <h3>ARE YOU SURE <br>YOU WANT TO EXIT?</h3>
+                    </div>
+                    <div class="modal-button">
+                        <a href="home.php"><button>YES</button></a>
+                        <button id="closeModal">NO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="next-modal" id="nextModal">
+                <div class="modal-contents nextModal">
+                    <div class="profile-photo"><img src="../assets/images/icon_score_tropy.png" alt=""></div>
+                    <h3>LEVEL COMPLETE!</h3>
+                    <div class="score-gains" id="points">
+                        <p id="score">-----</p>
+                    </div>
+                </div>
+            </div>
+            <div class="completion-modal modal" id="finalModal">
+                <div class="modal-contents finalModal">
+                    <h3>Congratulations!</h3>
+                    <p>You completed all levels!</p>
+                    <p><span id="finalScoreDisplay">0</span></p>
+                    <button id="submitAndHomeBtn">Go to Home</button>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="sound-option">
+                    <img src="../assets/images/icon_music_unmute.png" alt="Sound Toggle" id="toggleSound" />
+                </div>
+                <div class="stats-container">
+                    <div class="score">
+                        <p id="score">0</p>
+                        <img src="../assets/images/icon_score_tropy.png" alt="Rank" id="rank" class="stats">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio id="backgroundMusic" loop>
+            <source src="../assets/musics/snd_bg.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="../assets/js/exit.js"></script>
+    <script src="../assets/js/gameplay.js"></script>
+    <script src="../assets/js/music.js"></script>
+</body>
+</html>

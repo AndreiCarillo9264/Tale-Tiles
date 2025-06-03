@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tale Tiles</title>
+    <link rel="stylesheet" href="../assets/css/about.css">
+</head>
+<body>
+    <div class="about-page">
+        <div class="contents">
+            <div class="left-container">
+                <h2 id="exitButton">EXIT</h2>
+            </div>
+            <div class="center-container">
+                <div class="scrollable-content">
+                    <h1>About the Website</h1>
+                    <div class="modal-text">
+                        <h2>Tale Tiles</h2>
+                        <p><strong>TALE TILES</strong> is an interactive web-based educational game designed to help students and literature enthusiasts learn about literary terms, theories, authors, and famous works through engaging visual puzzles.</p>
+
+                        <h3>The Team</h3>
+                        <ul>
+                            <li><strong>Arellano, Danniel Arth</strong> – UI/UX Design (Figma)</li>
+                            <li><strong>Carillo, Andrei Christopher</strong> – Front-End & Back-End Development</li>
+                            <li><strong>Dalisay, Dane Rohan</strong> – Front-End & Back-End Development</li>
+                            <li><strong>Efren, Carlo Jay</strong> – UI/UX Design (Figma)</li>
+                            <li><strong>Gutierrez, Aeram Joshua</strong> – UI/UX Design (Figma)</li>
+                            <li><strong>Macahilig, Reignald Jensen</strong> – UI/UX Design (Figma)</li>
+                            <li><strong>Prades, Justine James</strong> – Front-End & Back-End Development</li>
+                            <li><strong>Simbulan, Carl Ivan Ken</strong> – UI/UX Design (Figma) & Front-End Development</li>
+                        </ul>
+
+                        <h3>Features of TaleTiles</h3>
+                        <ul>
+                            <li><strong>Interactive Puzzle Gameplay:</strong> Each level provides four image clues related to a literary term or figure.</li>
+                            <li><strong>Letter Bank System:</strong> Players must deduce the correct answer by placing letters in order.</li>
+                            <li><strong>Scoring Mechanic:</strong> Start with 100 points per level; lose 10 points each time you remove a letter to try again.</li>
+                            <li><strong>Leaderboard:</strong> Submit your final score after completing all levels and view the top 10 scores in real-time.</li>
+                            <li><strong>Audio Feedback:</strong> Enjoy typewriter and button click sounds for enhanced gameplay immersion.</li>
+                            <li><strong>Responsive Design:</strong> Works seamlessly on both desktop and mobile devices.</li>
+                        </ul>
+
+                        <h3>Goal of the Project</h3>
+                        <p>The goal of <strong>TaleTiles</strong> is to bridge the gap between learning and fun by make learning literature enjoyable and accessible through gamification — blending education with fun gameplay to improve retention and interest in literary concepts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="exit-modal modal" id="exitModal">
+                <div class="modal-contents exitModal">
+                    <div class="modal-text">
+                        <h3>ARE YOU SURE <br>YOU WANT TO EXIT?</h3>
+                    </div>
+                    <div class="modal-button">
+                        <a href="home.php"><button>YES</button></a>
+                        <button id="closeModal">NO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="sound-option">
+                    <img src="../assets/images/icon_music_unmute.png" alt="Sound Toggle" id="toggleSound" />
+                </div>
+            </div>
+            <audio id="backgroundMusic" loop>
+                <source src="../assets/musics/snd_bg.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <script src="../assets/js/exit.js"></script>
+    <script src="../assets/js/music.js"></script>
+</body>
+</html>
